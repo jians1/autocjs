@@ -347,15 +347,6 @@ var AutocJs = function () {
                 className: 'icon icon-menu'
             })]);
 
-            elements.top = dom.createElement('div', {
-                className: 'outline-outside-button outline-outside-top'
-            }, [dom.createElement('a', {
-                href: '#top',
-                className: 'outline-outside-top'
-            }, [dom.createElement('i', {
-                className: 'icon icon-arrow-up'
-            })])]);
-
             elements.footer = dom.createElement('div', {
                 className: 'outline-outside-footer'
             }, [elements.switcher, elements.top]);
@@ -658,7 +649,6 @@ var AutocJs = function () {
 
             if (position === 'outside') {
                 delegate(wrap, '.outline-outside-switcher', 'click', this._handleSwitcherClick, this);
-                delegate(wrap, '.outline-outside-top', 'click', this._handleTopClick, this);
                 delegate(wrap, '.outline-outside-overlay', 'click', this._handleOverlayClick, this);
             }
 
